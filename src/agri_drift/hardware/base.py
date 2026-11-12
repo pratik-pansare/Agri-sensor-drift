@@ -29,3 +29,4 @@ class SensorReader(ABC):
     def is_connected(self) -> bool:
         """Check whether sensor hardware bus is reachable."""
         pass
+

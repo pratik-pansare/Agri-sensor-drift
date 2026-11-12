@@ -90,3 +90,4 @@ if __name__ == "__main__":
     parser.add_argument("--config", default="configs/default.yaml", help="Path to config YAML")
     args = parser.parse_args()
     run_service(args.config)
+

@@ -12,3 +12,4 @@ data/*.db
 data/processed/
 data/raw/
 /tmp/matplotlib_cache/
+

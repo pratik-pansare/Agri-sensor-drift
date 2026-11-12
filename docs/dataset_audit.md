@@ -86,3 +86,4 @@ Data is chronologically partitioned into three non-overlapping contiguous segmen
 1. **Train Set (First 70%)**: Strictly pristine, healthy readings. Used to fit OLS neighbour regression models, establish baseline residual variance $\sigma_0^2$, and calibrate CUSUM parameters.
 2. **Validation Set (Next 15%)**: Uncorrupted healthy data containing natural rain/irrigation cycles. Used to verify that CUSUM/Page-Hinkley and physics checks generate $\le 0.05$ false alarms per sensor-week (negative-control tuning).
 3. **Test Set (Final 15%)**: Evaluates detection performance under controlled single-fault and multi-fault injection scenarios. Absolutely no parameters, thresholds, or regression coefficients may be updated using the test partition.
+

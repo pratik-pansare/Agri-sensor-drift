@@ -265,3 +265,4 @@ class HybridDecisionEngine:
             )
 
         return f"Sensor {sensor_id}: Suspected fault detected ({thresh_alert.reason or 'residual anomaly'})."
+

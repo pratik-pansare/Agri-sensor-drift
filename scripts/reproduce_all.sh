@@ -22,3 +22,4 @@ echo "Figures saved in: results/figures/"
 echo "To launch the interactive dashboard:"
 echo "  .venv/bin/streamlit run src/agri_drift/dashboard/app.py"
 echo "=========================================================="
+

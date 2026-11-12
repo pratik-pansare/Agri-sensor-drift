@@ -78,3 +78,4 @@ class ReplayStreamer:
     def reset(self) -> None:
         """Reset replay position to the beginning."""
         self.current_index = 0
+

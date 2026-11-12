@@ -109,3 +109,4 @@ def test_manifest_ground_truth_mask(baseline_df):
     assert mask.iloc[10:30].all()
     assert not mask.iloc[0:10].any()
     assert not mask.iloc[30:].any()
+

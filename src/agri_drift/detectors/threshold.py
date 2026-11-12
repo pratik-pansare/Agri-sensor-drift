@@ -95,3 +95,4 @@ class ThresholdDetector:
                 "threshold_delta": alert.delta,
             })
         return pd.DataFrame(results)
+

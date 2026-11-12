@@ -82,3 +82,4 @@ To guarantee that detectors do not trigger false alarms during natural environme
   - `figure2_pr_curves.png` / `.pdf`: Precision-Recall curves by model and fault type.
   - `figure3_detection_delay_boxplots.png` / `.pdf`: Detection delay across drift rates.
   - `figure4_live_diagnostics.png` / `.pdf`: Synchronized time-series, neighbour residuals, CUSUM statistics, and health state flags.
+

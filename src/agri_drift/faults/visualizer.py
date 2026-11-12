@@ -87,3 +87,4 @@ class FaultVisualizer:
             fig.savefig(p, dpi=300, bbox_inches="tight")
 
         return fig
+

@@ -87,3 +87,4 @@ def compute_detection_delay_and_far(
         "false_alarm_events": fa_event_count,
         "false_alarms_per_sensor_week": far_per_week,
     }
+

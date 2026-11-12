@@ -74,3 +74,4 @@ class FaultManifest:
             mask |= (timestamps >= r_start) & (timestamps <= r_end)
 
         return mask
+

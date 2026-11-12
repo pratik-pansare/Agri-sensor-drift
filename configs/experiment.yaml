@@ -30,3 +30,4 @@ output:
   save_pdf: true
   save_png: true
   dpi: 300
+

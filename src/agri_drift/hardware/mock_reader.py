@@ -73,3 +73,4 @@ class MockSensorReader(SensorReader):
             "ambient_temp": round(temp, 2),
             "relative_humidity": round(humidity, 1),
         }
+

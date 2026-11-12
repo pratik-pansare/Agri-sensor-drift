@@ -49,3 +49,4 @@ The detector flags a reading as suspect when the sensor disagrees with its neigh
 * Self-diagnosing edge service attaching health states to readings.
 * Plain-language farmer alerts.
 * Evaluation metrics: Precision, Recall, F1 per fault type; Mean Detection Delay (hours); False Alarms per sensor-week.
+

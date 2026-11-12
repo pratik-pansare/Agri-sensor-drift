@@ -35,3 +35,4 @@ echo "  sudo systemctl start agri_drift.service"
 echo "To view live diagnostic logs:"
 echo "  sudo journalctl -u agri_drift.service -f"
 echo "=========================================================="
+

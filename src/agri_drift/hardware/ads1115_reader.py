@@ -94,3 +94,4 @@ class ADS1115SensorReader(SensorReader):
         """Read DHT22 context sensor if connected."""
         # Optional DHT22 integration on Pi GPIO
         return {"ambient_temp": None, "relative_humidity": None}
+

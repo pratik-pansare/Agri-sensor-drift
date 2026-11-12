@@ -94,3 +94,4 @@ class PageHinkleyDetector:
             self.reset()
 
         return result
+

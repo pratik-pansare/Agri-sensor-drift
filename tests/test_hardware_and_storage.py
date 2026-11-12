@@ -102,3 +102,4 @@ def test_replay_streamer_execution(tmp_path):
     assert streamer.current_index == 5
     readings = db.get_recent_readings()
     assert len(readings) == 5 * 4  # 5 steps * 4 sensors
+

@@ -114,3 +114,4 @@ class PhysicsConsistencyDetector:
                 else:
                     # Responsive: decrease suspicion
                     self.suspicion_scores[s] = max(0.0, self.suspicion_scores[s] - self.suspicion_decay)
+

@@ -111,3 +111,4 @@ def test_neighbour_residual_and_contamination_defense(synthetic_data):
 
     # The masked prediction should be much closer to true healthy prediction
     assert abs(pred_masked - pred) < abs(pred_unmasked - pred)
+

@@ -75,3 +75,4 @@ class CusumDetector:
             self.reset()
 
         return result
+

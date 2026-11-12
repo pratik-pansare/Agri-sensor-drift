@@ -76,3 +76,4 @@ class AlertManager:
                 logger.error(f"Telegram alert delivery failed with status {resp.status_code}: {resp.text}")
         except Exception as e:
             logger.error(f"Failed to deliver Telegram alert: {e}")
+

@@ -64,3 +64,4 @@ alerts:
     enabled: false
     token_env_var: "AGRI_TELEGRAM_BOT_TOKEN"
     chat_id_env_var: "AGRI_TELEGRAM_CHAT_ID"
+

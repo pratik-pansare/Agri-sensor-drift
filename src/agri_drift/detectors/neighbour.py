@@ -96,3 +96,4 @@ class NeighbourResidualDetector:
         std_residual = (raw_residual - mu_0) / sigma_0
 
         return predicted_val, raw_residual, std_residual
+

@@ -73,3 +73,4 @@ class DataLoader:
         path = Path(file_path)
         path.parent.mkdir(parents=True, exist_ok=True)
         df.to_parquet(path, index=False)
+

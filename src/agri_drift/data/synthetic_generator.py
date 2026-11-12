@@ -164,3 +164,4 @@ class SyntheticHydrologyGenerator:
 
         validate_dataframe_schema(df)
         return df, water_events
+

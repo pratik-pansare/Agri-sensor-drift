@@ -178,3 +178,4 @@ class DatabaseManager:
                 df["timestamp"] = pd.to_datetime(df["timestamp"])
                 df = df.sort_values("timestamp")
             return df
+

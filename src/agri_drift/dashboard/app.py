@@ -166,3 +166,4 @@ if metrics_path.exists():
     st.dataframe(bm_df, use_container_width=True, hide_index=True)
 else:
     st.info("Run `python scripts/run_benchmarks.py` to populate reproducible benchmark metrics.")
+

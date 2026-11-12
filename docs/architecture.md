@@ -167,3 +167,4 @@ flowchart TD
 | **Storage Engine** | Health decision, reading tuple | SQLite relational rows (`readings`, `states`, `alerts`) | `sqlite3` |
 | **Evaluation** | Predictions DataFrame & Ground-Truth Manifest | Metrics dictionary, CSV reports, Matplotlib PNG/PDF plots | `scikit-learn`, `matplotlib` |
 | **Dashboard** | SQLite DB connection / live queue | Interactive Web UI (Streamlit components) | `streamlit` |
+

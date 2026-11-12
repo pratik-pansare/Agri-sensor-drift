@@ -90,3 +90,4 @@ def validate_dataframe_schema(df: pd.DataFrame) -> bool:
         raise TypeError(f"Timestamp column must be datetime, found {df['timestamp'].dtype}")
     
     return True
+

@@ -52,3 +52,4 @@ def test_csv_save_and_load(tmp_path):
     assert len(loaded_df) == len(df)
     assert meta["rows"] == len(df)
     assert "sensor_1" in loaded_df.columns
+

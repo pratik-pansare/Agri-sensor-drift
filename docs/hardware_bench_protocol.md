@@ -70,3 +70,4 @@ To convert raw ADC voltage $V_{raw}$ to percentage Volumetric Water Content (% V
 | **Day 5** | 14:00 | Simulated rain surge (250 mL all pots) | High surge across all pots | Negative control test: consensus surge must NOT raise false alarm. |
 | **Day 6** | — | Disconnect A3 wire momentarily | Reading drops to NaN / $0.0\text{ V}$ | Tests stuck-at / OFFLINE_OR_MISSING transition. |
 | **Day 7** | — | End of bench trial | Soil drying | Compute bench test metrics against gravimetric scale logs. |
+
