@@ -1,0 +1,5 @@
+system,precision_mean,precision_std,recall_mean,recall_std,f1_score_mean,f1_score_std,mean_detection_delay_hours_mean,mean_detection_delay_hours_std,false_alarms_per_sensor_week_mean,false_alarms_per_sensor_week_std
+Baseline-Threshold,1.0,0.0,0.012,0.0,0.024,0.0,3.3,2.502,0.0,0.0
+Hybrid-Physics-Aware,0.323,0.138,0.791,0.03,0.448,0.132,1.481,0.864,4.317,1.652
+Neighbour-CUSUM,0.443,0.015,0.45,0.039,0.446,0.025,2.531,0.407,51.139,6.009
+Neighbour-PageHinkley,0.272,0.037,0.032,0.006,0.058,0.011,5.0,0.975,10.85,0.54

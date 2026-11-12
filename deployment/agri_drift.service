@@ -1,0 +1,17 @@
+[Unit]
+Description=Agri-Drift IoT Edge Sensor Health & Fault Monitoring Service
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/Agri-sensor-drift
+Environment="PYTHONPATH=/home/pi/Agri-sensor-drift/src"
+ExecStart=/home/pi/Agri-sensor-drift/.venv/bin/python -m agri_drift.streaming.edge_service --config configs/default.yaml
+Restart=on-failure
+RestartSec=10s
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

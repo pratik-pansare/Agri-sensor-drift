@@ -1,0 +1,32 @@
+# Experiment evaluation parameters
+
+experiment:
+  name: "agri_sensor_drift_comparative_benchmark"
+  random_seeds: [42, 101, 777, 1337, 2026]
+  sampling_rate_minutes: 15
+  test_duration_days: 30
+
+models:
+  - "Baseline-Threshold"
+  - "Neighbour-CUSUM"
+  - "Neighbour-PageHinkley"
+  - "Hybrid-Physics-Aware"
+
+metrics:
+  - "precision"
+  - "recall"
+  - "f1_score"
+  - "detection_delay_hours"
+  - "false_alarms_per_sensor_week"
+
+negative_controls:
+  include_rain_storm: true
+  include_drought_drying: true
+  include_drip_irrigation: true
+
+output:
+  metrics_dir: "results/metrics"
+  figures_dir: "results/figures"
+  save_pdf: true
+  save_png: true
+  dpi: 300

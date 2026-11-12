@@ -1,0 +1,75 @@
+# Fault injection parameters and benchmark scenarios
+
+random_seed: 42
+
+fault_types:
+  drift:
+    rates_vwc_per_day: [0.5, 1.0, 2.0, -1.0, -2.0]
+    min_duration_hours: 48
+    max_duration_hours: 168
+
+  bias:
+    offsets_vwc: [3.0, 5.0, -5.0, 10.0, -10.0]
+    min_duration_hours: 24
+    max_duration_hours: 96
+
+  stuck_at:
+    modes: ["freeze_current", "ground_zero", "saturation_high"]
+    ground_value: 0.0
+    saturation_value: 55.0
+    min_duration_hours: 12
+    max_duration_hours: 72
+
+  spike:
+    amplitudes_vwc: [10.0, -10.0, 20.0, -20.0]
+    duration_samples: [1, 2]
+    frequency_per_episode: 5
+
+  noise:
+    std_multipliers: [2.0, 4.0, 8.0]
+    min_duration_hours: 24
+    max_duration_hours: 96
+
+benchmark_episodes:
+  - id: "fault_drift_pos_moderate"
+    fault_type: "drift"
+    sensor_id: "sensor_2"
+    rate_vwc_per_day: 1.5
+    start_hour: 120
+    duration_hours: 96
+
+  - id: "fault_drift_neg_subtle"
+    fault_type: "drift"
+    sensor_id: "sensor_3"
+    rate_vwc_per_day: -1.0
+    start_hour: 240
+    duration_hours: 96
+
+  - id: "fault_bias_step"
+    fault_type: "bias"
+    sensor_id: "sensor_1"
+    offset_vwc: 6.0
+    start_hour: 360
+    duration_hours: 48
+
+  - id: "fault_stuck_freeze"
+    fault_type: "stuck_at"
+    sensor_id: "sensor_4"
+    mode: "freeze_current"
+    start_hour: 440
+    duration_hours: 36
+
+  - id: "fault_transient_spikes"
+    fault_type: "spike"
+    sensor_id: "sensor_2"
+    amplitude_vwc: 18.0
+    duration_samples: 1
+    start_hour: 520
+    duration_hours: 24
+
+  - id: "fault_excessive_noise"
+    fault_type: "noise"
+    sensor_id: "sensor_3"
+    std_multiplier: 5.0
+    start_hour: 580
+    duration_hours: 48
